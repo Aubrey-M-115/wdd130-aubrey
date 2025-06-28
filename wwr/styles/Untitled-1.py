@@ -94,10 +94,12 @@
 # abso_lute = lambda x: abs(x)
 # print(sorted(numbers, key=abso_lute))
 
-def debug_task4(s):
-    rev = ""
-    for char in s:
-         rev = char + rev
-    return rev
+# def debug_task4(s):
+#     rev = ""
+#     for char in s:
+#          rev = char + rev
+#     return rev
 
-print(debug_task4("regty"))
+# print(debug_task4("regty"))
+
+# filter(lambda x: x * 2 > 1, [1, 2, 3])
