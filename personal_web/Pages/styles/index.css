@@ -2,3 +2,42 @@
     text-align: center;
     width: 100%;
 }
+
+#content {
+    margin: 0 auto;
+    max-width: 1600px;
+    grid-template-columns: repeat 8(1fr);
+    grid-template-rows: repeat 6(1fr);
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+
+}
+
+:root {
+    background-color: white;
+    padding: 30px;
+}
+
+#v-ball-long {
+    width: 10px;
+    height: 10px;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    color: #358CFD;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
