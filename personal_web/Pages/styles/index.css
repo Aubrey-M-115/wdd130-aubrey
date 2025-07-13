@@ -1,29 +1,40 @@
 #v-ball-long {
     text-align: center;
     width: 100%;
+    height: 50px;
+    width: 50px;
 }
 
 #content {
     margin: 0 auto;
     max-width: 1600px;
-    grid-template-columns: repeat 8(1fr);
-    grid-template-rows: repeat 6(1fr);
 }
 
 #logo {
-    width: 100%;
-    height: auto;
+    width: 50px;
+    height: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
+#button-box {
+    text-align: center;
+    font-family: helvetica, Arial, sans-serif;
+    padding: 30px;
+    border-radius: 25px;
 }
 
 :root {
     background-color: white;
     padding: 30px;
+    grid-template-columns: repeat 8(1fr);
+    grid-template-rows: repeat 6(1fr);
 }
 
-#v-ball-long {
-    width: 10px;
-    height: 10px;
+nav {
+    font-family: Helvetica, Arial, sans-serif;
+    grid-column: 2/5;
+    grid-row: 1/2;
 }
 
 nav a:hover {
@@ -32,8 +43,14 @@ nav a:hover {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+#intro {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .footer {
     position: fixed;
+    grid-template-columns: 1fr 1fr 1fr;
     left: 0;
     bottom: 0;
     width: 100%;
