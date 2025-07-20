@@ -1,6 +1,7 @@
 #content {
     margin: 0 auto;
     max-width: 1600px;
+    background-color: #C2C2C2;
 }
 
 header {
@@ -15,22 +16,30 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#logo {
-    width: 50px;
-    height: 50px;
+.logo {
+    width: 200px;
+    height: 200px;
     grid-column: 1/2;
 }
 
 
-#button-box {
+.button-box {
     text-align: center;
     font-family: helvetica, Arial, sans-serif;
+    color: #C2C2C2;
     padding: 30px;
     border-radius: 25px;
+    border-color: black;
+    margin: 0;
+
+}
+
+.button-box a:hover {
+    color: #358CFD;
 }
 
 nav a:hover {
-    background-color: aliceblue;
+    background-color: #374A6D;
     color: #358CFD;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -60,47 +69,22 @@ nav {
 }
 
 .photo_2 {
-    padding: 80px;
-    padding-left: 250px;
+    justify-content: center;
+    padding-left: 800px;
     grid-column: 2/3;
     grid-row: 1/2;
     height: 700px;
     width: 1100px;
 }
 
-#beginner {
-    border-radius: 10px;
-    border-color: black;
-    margin: 0;
-}
-
-#intermediate {
+.beginner,
+.advanced {
     border-radius: 10px;
     border-color: black;
     margin: 0;
 
 }
 
-#advanced {
-    border-radius: 10px;
-    border-color: black;
-    margin: 0;
-}
-
-#positions {
-    border-radius: 10px;
-    border-color: black;
-    margin: 0;
-}
-
-#rotations {
-    border-radius: 10px;
-    border-color: black;
-    margin: 0;
-}
-
-#techniques {
-    border-radius: 10px;
-    border-color: black;
-    margin: 0;
+*/ footer a:hover {
+    color: #358CFD;
 }

@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #content {
     margin: 0 auto;
     max-width: 1600px;
@@ -11,6 +15,9 @@ header {
     border-bottom: #C2C2C2;
 }
 
+header a {
+    color: #C2C2C2;
+}
 
 .logo {
     width: 200px;
@@ -21,13 +28,13 @@ header {
 .start_now {
     font-family: helvetica, Arial, sans-serif;
     padding: 30px;
-    padding-left: 750px;
+    padding-left: 800px;
     border-radius: 25px;
     border-color: black;
     font-size: 25px;
 }
 
-main {
+.index_main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -41,9 +48,6 @@ main {
     width: 1100px;
 }
 
-#intro {
-    font-family: Helvetica, Arial, sans-serif;
-}
 
 nav {
     font-family: Helvetica, Arial, sans-serif;
@@ -56,12 +60,15 @@ nav {
 
 nav a:hover {
     background-color: #374A6D;
-    color: #358CFD;
+    color: #99E9FF;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 #intro {
+    /* display: flex; */
     text-align: center;
+    /* justify-items: center; */
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
 }
@@ -74,9 +81,82 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #374A6D;
-    color: white;
+    color: #C2C2C2;
     text-align: center;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+footer a {
+    color: #C2C2C2;
+}
+
+footer a:hover {
+    color: #99E9FF;
+}
+
+/* start.css page*/
+
+.photo_2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 250px;
+    height: 700px;
+    width: 1100px;
+}
+
+.beginner,
+.advanced,
+.intermediate,
+.positions,
+.techniques,
+.rotations {
+    border-radius: 100px;
+    border-color: black;
+    color: #358CFD;
+    margin: 0;
+
+
+}
+
+.button-box a:hover,
+.button-box_1 a:hover {
+    color: #99E9FF;
+}
+
+.button-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    font-family: helvetica, Arial, sans-serif;
+    color: #C2C2C2;
+    padding: 30px;
+    border-radius: 25px;
+    border-color: black;
+    margin: 0;
+}
+
+.beginner {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.button-box p {
+    text-align: center;
+    color: black;
+}
+
+/* about_me */
+
+.me_photo {
+    padding: 80px;
+    padding-left: 500px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 700px;
+    width: 600px;
+
 }
