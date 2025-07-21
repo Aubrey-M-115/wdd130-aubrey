@@ -153,13 +153,19 @@ footer a:hover {
 
 /* about_me */
 
+#content_me {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: #C2C2C2;
+}
+
 .me_photo {
     padding: 80px;
     padding-left: 500px;
     grid-column: 2/3;
     grid-row: 1/2;
-    height: 700px;
-    width: 600px;
+    height: 675px;
+    width: 550px;
 
 }
 
